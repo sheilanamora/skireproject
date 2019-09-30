@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:tools="http://schemas.android.com/tools"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:orientation="vertical"
+                                       tools:context=".fragment.SecondFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <TextView
+                    android:id="@+id/tv_babNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bab 2"
+                    android:textSize="18sp"
+                    android:textColor="@color/black_text2"/>
+
+            <TextView
+                    android:id="@+id/tv_babTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Komunikasi"
+                    android:layout_marginTop="4dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/black_text2"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/tv_babInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Submateri - 150 Menit"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_text2"/>
+
+            <TextView
+                    android:id="@+id/tv_babDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pada bab ini akan diajarkan cara berkomunikasi yang baik, baik dengan pelanggan maupun dengan pekerja lainnya"
+                    android:maxLines="3"
+                    android:layout_marginTop="24dp"
+                    android:ellipsize="end"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_text2"/>
+
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submateri"
+                android:maxLines="3"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black_text2"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trainingBased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
